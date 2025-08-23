@@ -6,7 +6,7 @@ volumes:
 services:
   #docker run -d --name mysql --network expense -v mysql:/var/lib/mysql mysql:1.0.0
   mysql:
-    images: mysql:1.0.0
+    image: mysql:1.0.0
     networks:
     - expense
     container_name: mysql
