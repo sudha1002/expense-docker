@@ -7,7 +7,7 @@ WORKDIR /opt/backend
 ENV DB_HOST="mysql"
 #ENV DB_HOST="localhost"
 USER expense
-COPY package.json .
-COPY *.js .
+COPY package.json ./
+COPY *.js ./
 RUN npm install
 CMD ["node","index.js"]
